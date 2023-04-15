@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        style="@style/BackGroundImageView"
+        android:layout_margin="0dp"
+        android:id="@+id/ivArticleImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        tools:ignore="ContentDescription" />
+    
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:padding="10dp"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:maxLines="2"
+        android:text="Title"
+        android:textColor="@color/previewTextColor"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+<!--    Align Textview to the right-->
+
+    <TextView
+        android:id="@+id/tvSource"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:maxLines="2"
+        android:text="Source"
+        android:textColor="@color/previewTextColor"
+        android:textSize="16sp" />
+
+</RelativeLayout>
